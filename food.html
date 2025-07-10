@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sh.Ai | Food Products</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header>
+    <h1>Sh.Ai</h1>
+    <p class="tagline">Explore the best food products with your shopping assistant</p>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html#products-section" class="nav-link">All Products</a></li>
+        <li><a href="index.html#lifestyle" class="nav-link">Lifestyle</a></li>
+        <li><a href="index.html#technology" class="nav-link">Technology</a></li>
+        <li><a href="food.html" class="nav-link active">Food</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="food">
+      <h2>Food</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="https://media.istockphoto.com/id/1364760973/photo/packed-and-labeled-fresh-tomatoes-on-isolated-white-background.jpg?s=612x612&w=0&k=20&c=eAuly_htm-aRha5dWiJQmYUK32KnfVeEBEKEGqtuYAM=" alt="Tomato" />
+          <h3>Tomato</h3>
+          <p class="price">$0.80 <span class="store">Local Market</span></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="https://img.rtacdn-os.com/20240305/dd2d3904-54fa-31ad-b3fe-eab882075b26" alt="Egg" />
+          <h3>Egg</h3>
+          <p class="price">$1.20 <span class="store">Local Market</span></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.sedap.sg/cdn/shop/products/Unicurd-Silken-Tofu-Box-Soy-Food-Unicurd.jpg?v=1740823401" alt="Tofu" />
+          <h3>Tofu</h3>
+          <p class="price">$1.00 <span class="store">Local Market</span></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="https://media.nedigital.sg/fairprice/fpol/media/images/product/XL/255051_XL1_20231117.jpg" alt="Instant Noodles" />
+          <h3>Instant Noodles</h3>
+          <p class="price">$0.50 <span class="store">Local Market</span></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+        <div class="product-card">
+          <img src="https://www.justbarefoods.com/wp-content/uploads/2023/02/58615_JB_BSB__36oz_Front-reize11.webp" alt="Chicken Breast" />
+          <h3>Chicken Breast</h3>
+          <p class="price">$2.80 <span class="store">Local Market</span></p>
+          <button class="buy-btn">Buy Now</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- Flowise Chatbox -->
+  <div id="flowise-chatbox" style="position: fixed; bottom: 24px; right: 24px; z-index: 2000; width: 350px; max-width: 95vw; display: none;"></div>
+  <script src="js/app.js"></script>
+  <script type="module">
+    import Chatbot from "https://cdn.jsdelivr.net/npm/flowise-embed/dist/web.js";
+    Chatbot.init({
+      chatflowid: "144ac3cc-08af-4849-805c-acbfccbf0325",
+      apiHost: "https://cloud.flowiseai.com",
+      chatflowConfig: {},
+      theme: {
+        button: { backgroundColor: '#00cfff' },
+        chatWindow: { backgroundColor: '#1a0033', color: '#e0e6f7' }
+      },
+      container: "#flowise-chatbox"
+    });
+  </script>
+      <footer>
+        <p>&copy; 2025 Sh.Ai. All rights reserved.</p>
+      </footer>
+</body>
+</html>
