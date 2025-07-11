@@ -36,15 +36,11 @@
   <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
   <script>
     window.botpressWebChat.init({
-      // The URL of your Botpress webhook
       host: 'https://webhook.botpress.cloud/d4ff7d50-039e-4bd3-8398-2fb71e46f9a2',
-      // The ID of your bot (same GUID)
       botId: 'd4ff7d50-039e-4bd3-8398-2fb71e46f9a2',
-      // Where the messaging engine lives
       messagingUrl: 'https://messaging.botpress.cloud',
-      // Keep the Flowise container ID so your CSS still applies
       container: '#flowise-chatbox',
-      // Optional theming – feel free to tweak
+      carouselPageSize: 1,
       showConvoHeader: true,
       enableReset: true,
       enableTranscriptDownload: false
