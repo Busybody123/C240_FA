@@ -203,11 +203,14 @@
   <!-- Your existing JS -->
   <script src="js/app.js"></script>
   <!-- Botpress Cloud Webchat embed -->
+  <!-- Botpress Cloud Webchat embed -->
   <script src="https://cdn.botpress.cloud/webchat/v0/inject.js"></script>
   <script>
     window.botpressWebChat.init({
-      host: 'https://webhook.botpress.cloud/d4ff7d50-039e-4bd3-8398-2fb71e46f9a2',
       botId: 'd4ff7d50-039e-4bd3-8398-2fb71e46f9a2',
+      // this is where the widget will load its HTML/CSS/JS from:
+      host: 'https://cdn.botpress.cloud/webchat/v0',
+      // this is the real messaging endpoint (your webhook only handles events)
       messagingUrl: 'https://messaging.botpress.cloud',
       container: '#flowise-chatbox',
       carouselPageSize: 1,
